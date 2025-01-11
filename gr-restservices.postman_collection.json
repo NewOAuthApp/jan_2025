@@ -1,0 +1,1105 @@
+{
+	"info": {
+		"_postman_id": "00457b69-2124-4583-9a6e-c392410b96bf",
+		"name": "gr-restservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Eclipse",
+			"item": [
+				{
+					"name": "Enrollment Api",
+					"item": [
+						{
+							"name": "Customer Enrollment Service",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{eclipse_token}}",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"enrollMemberRequest\": {\r\n        \"accountCycle\": \"08\",\r\n        \"address\": {\r\n            \"addressLineFifth\": null,\r\n            \"addressLineFirst\": \"1st MAIN\",\r\n            \"addressLineFourth\": null,\r\n            \"addressLineSecond\": \"99-99 Macdonald House\",\r\n            \"addressLineSixth\": null,\r\n            \"addressLineThird\": null,\r\n            \"city\": \"Sydney\",\r\n            \"countryCode\": \"BH\",\r\n            \"postalZipCode\": \"2460\",\r\n            \"postalZipCodeExtension\": null,\r\n            \"state\": \"QUEENSLAND\"\r\n        },\r\n        \"addressIndicator\": \"\",\r\n        \"affinityId\": \"20221218122419\",\r\n        \"arSystemCode\": null,\r\n        \"campaignId\": null,\r\n        \"currentBucketStatus\": \"\",\r\n        \"customerId\": \"string\",\r\n        \"dateOfBirth\": \"1921081589\",\r\n        \"displayAffinityId\": \"string\",\r\n        \"eSignIndicator\": \"1\",\r\n        \"email\": {\r\n            \"emailAddress\": \"matt.hayden1@gmail.com\"\r\n        },\r\n        \"enrollmentChannel\": null,\r\n        \"enrollmentDate\": \"20200210\",\r\n        \"foreignAddressIndicator\": null,\r\n        \"fulfillmentCode\": null,\r\n        \"globalRewardsId\": \"GR000538091629180002\",\r\n        \"memberIdentification\": \"\",\r\n        \"name\": {\r\n            \"firstName\": \"Arjun\",\r\n            \"lastName\": \"K\",\r\n            \"middleName\": \"KMR\",\r\n            \"prefix\": \"mr\",\r\n            \"secondLastName\": null,\r\n            \"suffix\": \"\"\r\n        },\r\n        \"oldAffinityId\": \"\",\r\n        \"phones\": [\r\n            {\r\n                \"phoneNumber\": \"81841426\",\r\n                \"phoneType\": \"H\"\r\n            }\r\n        ],\r\n        \"preferredLanguageCode\": \"E\",\r\n        \"productCode\": \"C048-100\",\r\n        \"socialSecurityNumber\": \"2233\",\r\n        \"sponser\": \"BHCC\",\r\n        \"subProductCode\": \"00000-0000\",\r\n        \"transactionCode\": \"ENR\",\r\n        \"transcationReferenceId\": \"Ref001\",\r\n        \"userId\": null\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"BH\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{services_url}}/restservices-eclipse/services/customerEnrollmentService",
+									"host": [
+										"{{services_url}}"
+									],
+									"path": [
+										"restservices-eclipse",
+										"services",
+										"customerEnrollmentService"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Process ADR",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{eclipse_token}}",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"enrollMemberRequest\": {\r\n        \"accountCycle\": \"08\",\r\n        \"address\": {\r\n            \"addressLineFifth\": null,\r\n            \"addressLineFirst\": \"1st MAIN\",\r\n            \"addressLineFourth\": null,\r\n            \"addressLineSecond\": \"99-99 Macdonald House\",\r\n            \"addressLineSixth\": null,\r\n            \"addressLineThird\": null,\r\n            \"city\": \"Sydney\",\r\n            \"countryCode\": \"BH\",\r\n            \"postalZipCode\": \"2460\",\r\n            \"postalZipCodeExtension\": null,\r\n            \"state\": \"QUEENSLAND\"\r\n        },\r\n        \"addressIndicator\": \"\",\r\n        \"affinityId\": \"2022121812241\",\r\n        \"arSystemCode\": null,\r\n        \"campaignId\": null,\r\n        \"currentBucketStatus\": \"\",\r\n        \"customerId\": \"string\",\r\n        \"dateOfBirth\": \"19210815\",\r\n        \"displayAffinityId\": \"string\",\r\n        \"eSignIndicator\": \"1\",\r\n        \"email\": {\r\n            \"emailAddress\": \"matt.hayden1@gmail.com\"\r\n        },\r\n        \"enrollmentChannel\": null,\r\n        \"enrollmentDate\": \"20221221\",\r\n        \"foreignAddressIndicator\": null,\r\n        \"fulfillmentCode\": null,\r\n        \"globalRewardsId\": \"GR000538091629180002\",\r\n        \"memberIdentification\": \"1048023882628369\",\r\n        \"name\": {\r\n            \"firstName\": \"Arjun1\",\r\n            \"lastName\": \"K1\",\r\n            \"middleName\": \"KMR1\",\r\n            \"prefix\": \"mr\",\r\n            \"secondLastName\": null,\r\n            \"suffix\": \"\"\r\n        },\r\n        \"oldAffinityId\": \"\",\r\n        \"phones\": [\r\n            {\r\n                \"phoneNumber\": \"818414261\",\r\n                \"phoneType\": \"H\"\r\n            }\r\n        ],\r\n        \"preferredLanguageCode\": \"E\",\r\n        \"productCode\": \"C048-100\",\r\n        \"socialSecurityNumber\": \"2233\",\r\n        \"sponser\": \"BHCC\",\r\n        \"subProductCode\": \"00000-0000\",\r\n        \"transactionCode\": \"ADR\",\r\n        \"transcationReferenceId\": \"Ref001\",\r\n        \"userId\": null\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"BH\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{services_url}}/restservices-eclipse/services/processAdr",
+									"host": [
+										"{{services_url}}"
+									],
+									"path": [
+										"restservices-eclipse",
+										"services",
+										"processAdr"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Maintenance Api",
+					"item": [
+						{
+							"name": "AFF",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{eclipse_token}}",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"maintenanceAffRequest\": {\r\n        \"activityDate\": \"20221215\",\r\n        \"affinityId\": \"0004056828099932155\",\r\n        \"displayAffinityId\": \"string\",\r\n        \"globalRewardsId\": \"0650650000000000005526223\",\r\n        \"memberId\": null,\r\n        \"oldAffinityId\": \"0004056828099932154\",\r\n        \"productCode\": \"C888-980\",\r\n        \"sponser\": \"SGCC\",\r\n        \"subProductCode\": \"00000-0000\",\r\n        \"transactionCode\": \"AFF\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{services_url}}/restservices-eclipse/services/maintenance/aff",
+									"host": [
+										"{{services_url}}"
+									],
+									"path": [
+										"restservices-eclipse",
+										"services",
+										"maintenance",
+										"aff"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "BUK",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{eclipse_token}}",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"maintenanceApiBukRequest\": {\r\n        \"activityDate\": \"20221215\",\r\n        \"affinityId\": \"0004056828099932153\",\r\n        \"bucketStatusChangeReason\": \"B\",\r\n        \"eSignInd\": \"string\",\r\n        \"emailAddress\": \"string\",\r\n        \"globalRewardsId\": \"0650650000000000005526223\",\r\n        \"memberId\": null,\r\n        \"newBucket\": \"2\",\r\n        \"oldBucket\": \"0\",\r\n        \"productCode\": \"C888-980\",\r\n        \"sponser\": \"SGCC\",\r\n        \"statusReasonCode\": null,\r\n        \"subProductCode\": \"00000-0000\",\r\n        \"transactionCode\": \"BUK\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{services_url}}/restservices-eclipse/services/maintenance/buk",
+									"host": [
+										"{{services_url}}"
+									],
+									"path": [
+										"restservices-eclipse",
+										"services",
+										"maintenance",
+										"buk"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CAN",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{eclipse_token}}",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"maintenanceApiCanRequest\": {\r\n        \"accountClosureIndicator\": null,\r\n        \"accountStatus\": null,\r\n        \"activityDate\": \"20221215\",\r\n        \"affinityId\": \"0004056828000042696\",\r\n        \"bucketStatusChangeReason\": \"I\",\r\n        \"eSignInd\": null,\r\n        \"emailAddress\": null,\r\n        \"globalRewardsId\": \"0650650000000000005526223\",\r\n        \"memberId\": null,\r\n        \"newBucket\": \"2\",\r\n        \"oldBucket\": \"0\",\r\n        \"productCode\": \"C888-980\",\r\n        \"sponser\": \"SGCC\",\r\n        \"statusReasonCode\": null,\r\n        \"subProductCode\": \"00000-0000\",\r\n        \"transactionCode\": \"CAN\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{services_url}}/restservices-eclipse/services/maintenance/can",
+									"host": [
+										"{{services_url}}"
+									],
+									"path": [
+										"restservices-eclipse",
+										"services",
+										"maintenance",
+										"can"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Account Check Service",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountCheckRequest\": {\r\n        \"accountGRInfoCollection\": [\r\n            {\r\n                \"accountNumber\": \"0004685242190024291\",\r\n                \"grId\": \"0360360000000000018243614\"\r\n            }\r\n        ]\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"AU\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getAccountCheckService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getAccountCheckService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get IVR Catalog",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ivrCatalogRequest\": {\r\n        \"accountNumber\": \"0000036053600146622\",\r\n        \"memberId\": null\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"AU\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getIVRCatalogService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getIVRCatalogService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member Minimum Info",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberMinInfoRequest\": {\r\n        \"grId\": null,\r\n        \"mbrAccountNumber\": null,\r\n        \"memberId\": 7901110535527560\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"TW\",\r\n        \"languageCode\": \"ZHO\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getMemberMinimumInfo",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getMemberMinimumInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member Reward History",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberRewardHistoryRequest\": {\r\n        \"accountNumber\": \"9005425504000001641\",\r\n        \"endDate\": \"12-10-2022 14:37:20\",\r\n        \"grId\": null,\r\n        \"memberId\": null,\r\n        \"startDate\": \"03-09-2015 14:37:20\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"TW\",\r\n        \"languageCode\": \"ZHO\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getMemberRewardHistoryService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getMemberRewardHistoryService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member Transaction Earn History",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberTransactionEarnHistoryRequest\": {\r\n        \"accountNumber\": \"0004813635959914146\",\r\n        \"endDate\": \"2019-06-03T23:59:59\",\r\n        \"grId\": null,\r\n        \"startDate\": \"2018-06-03T00:00:01\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"AU\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getMemberTransactionEarnHistoryService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getMemberTransactionEarnHistoryService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order Detail",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderDetailReq\": {\r\n        \"agentId\": null,\r\n        \"orderId\": 2007834198,\r\n        \"orderLineNum\": 1\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/getOrderDetailService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"getOrderDetailService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Member Adjustment Service",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberAdjustmentRequest\": {\r\n        \"accountNumber\": \"0005288519103756871\",\r\n        \"adjustmentCode\": \"8001PSCARD\",\r\n        \"agentId\": \"AdjAgent\",\r\n        \"grId\": null,\r\n        \"points\": \"100000\",\r\n        \"pointsSubtype\": \"MXPTSNTX\",\r\n        \"reasonCode\": \"12\",\r\n        \"reasonDescription\": \"Citi Paypal Card Positive Adjustment\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"MX\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/memberAdjustmentService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"memberAdjustmentService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place Cash Back Rewards Order",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cashBackRewardsOrderReq\": {\r\n        \"accountNumber\": 9005425504000001000,\r\n        \"actionCode\": \"actionCode\",\r\n        \"agentId\": \"XX12345\",\r\n        \"currencyCode\": \"US\",\r\n        \"description\": \"description\",\r\n        \"fullValuePrice\": 1234,\r\n        \"grId\": \"0650650000000000005880794\",\r\n        \"inventoryCode\": \"inventoryCode\",\r\n        \"merchantName\": \"merchantName\",\r\n        \"orderId\": 0.01,\r\n        \"orderLineNum\": 1,\r\n        \"points\": 1568449,\r\n        \"redemptionSrc\": \"redemptionSrc\",\r\n        \"saffIndicator\": \"Y\",\r\n        \"tranRefNum\": \"tranRefNum\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"MX\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/placeCashBackRewardsOrderService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"placeCashBackRewardsOrderService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Register Member",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registerMemberRequest\": {\r\n        \"accountNumber\": \"0004685242190024291\",\r\n        \"agentId\": \"XX12345\",\r\n        \"email\": \"abc@test.com\",\r\n        \"grId\": \"0360360000000000018243614\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"MX\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/setRegisterMemberService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"setRegisterMemberService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Update Reward Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{eclipse_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"AU\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": \"GRCS\"\r\n    },\r\n    \"updateRewardOrderRequest\": {\r\n        \"actionCode\": \"CANCEL\",\r\n        \"agentId\": \"qwe\",\r\n        \"orderId\": 2000003076,\r\n        \"orderLineNumber\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-eclipse/services/setUpdateRewardOrderService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-eclipse",
+								"services",
+								"setUpdateRewardOrderService"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{eclipse_token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Rewards",
+			"item": [
+				{
+					"name": "Get Catalog Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalogRequest\": {\r\n        \"awardCountryCode\": \"SG\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/getCatalogService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"getCatalogService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get FxRate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fxRateReq\": {\r\n        \"countryCode\": \"SG\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"SG\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/getFXRateService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"getFXRateService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member Item Eligibility",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{rewards_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberItemEligibilityRequest\": {\r\n        \"awdItemId\": 40002902,\r\n        \"memberId\": \"2036048232200918\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"AU\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": \"GRSC\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/getMemberItemEligibilityService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"getMemberItemEligibilityService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Member Minimum Info",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{rewards_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberMinInfoRequest\": {\r\n        \"grId\": null,\r\n        \"mbrAccountNumber\": null,\r\n        \"memberId\": 7901110535527560\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"TW\",\r\n        \"languageCode\": \"ZHO\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/getMemberMinimumInfo",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"getMemberMinimumInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place Rewards Order",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{rewards_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"placeRewardsOrderRequest\": {\r\n        \"agentid\": \"SG98765\",\r\n        \"bypassEmailAddressInd\": \"N\",\r\n        \"mbrAddress1\": \"123 main st\",\r\n        \"mbrAddress2\": \"suite200\",\r\n        \"mbrAddress3\": \"string\",\r\n        \"mbrAddress4\": \"string\",\r\n        \"mbrAddress5\": \"string\",\r\n        \"mbrAddress6\": \"string\",\r\n        \"mbrCity\": \"Chicago\",\r\n        \"mbrCountryCode\": \"PH\",\r\n        \"mbrPostalCode\": 44444,\r\n        \"mbrPostalCodeExt\": 1234,\r\n        \"mbrState\": \"NY\",\r\n        \"memberId\": \"9608061347082140\",\r\n        \"nameFirst\": \"Matt\",\r\n        \"nameLast\": \"Hanks\",\r\n        \"nameMI\": \"D\",\r\n        \"nameSecondLast\": \"Hoffman\",\r\n        \"notificationEmailAddress\": \"email@notify.com\",\r\n        \"orderEmail\": \"order@delivery.com\",\r\n        \"redemptionSource\": \"W\",\r\n        \"rewardOrderCollection\": {\r\n            \"rewardOrders\": [\r\n                {\r\n                    \"accountKey\": \"5009394848_0012\",\r\n                    \"appleStoreURL\": \"www.apple.com\",\r\n                    \"awardItemId\": \"41020058\",\r\n                    \"baseCurrencyCode\": \"USD\",\r\n                    \"brand\": \"apple\",\r\n                    \"category\": \"GRB25\",\r\n                    \"certExpDttm\": \"2022-07-10 14:58:00.000000\",\r\n                    \"certId\": \"1\",\r\n                    \"citiPhoneMkup\": \"1\",\r\n                    \"cloudCartId\": \"1\",\r\n                    \"cloudOrderId\": \"123\",\r\n                    \"cloudOrderLine\": \"1\",\r\n                    \"cpp\": \"1\",\r\n                    \"currencyCode\": \"PHP\",\r\n                    \"estimatedShipDate\": \"2022-07-10 14:58:00.000000\",\r\n                    \"fullValuePrice\": 10,\r\n                    \"fxConversionRate\": 1.5,\r\n                    \"fxFileId\": \"1\",\r\n                    \"instoreConfirmationNum\": \"1\",\r\n                    \"instoreMerchantAddressLocation\": \"a\",\r\n                    \"instoreMerchantName\": \"aa\",\r\n                    \"instorePickupDttm\": \"2022-07-10 14:58:00.000000\",\r\n                    \"instorePickupInd\": \"N\",\r\n                    \"itemCost\": 10,\r\n                    \"itemName\": \"Watche\",\r\n                    \"itemQty\": 1,\r\n                    \"largeImageUrl\": \"string\",\r\n                    \"markupCost\": 10,\r\n                    \"markupFee\": 10,\r\n                    \"mediumImageUrl\": \"string\",\r\n                    \"merchantItemId\": \"1\",\r\n                    \"miscCost\": 10,\r\n                    \"otherPoints\": \"1\",\r\n                    \"partnerItemId\": \"1\",\r\n                    \"partnerOrderId\": \"1\",\r\n                    \"processingFee\": 10,\r\n                    \"prodDescription\": \"aa\",\r\n                    \"psId\": \"tag\",\r\n                    \"saffInd\": \"N\",\r\n                    \"shipMethod\": \"STANDARD\",\r\n                    \"shippingCarrier\": \"aa\",\r\n                    \"shippingCost\": 10,\r\n                    \"shippingPoints\": \"12\",\r\n                    \"smallImageUrl\": \"string\",\r\n                    \"splitTenderCashCurrencyCode\": \"PHP\",\r\n                    \"splitTenderCashValue\": \"10\",\r\n                    \"splitTenderInd\": \"Y\",\r\n                    \"streetCost\": 1,\r\n                    \"subCategory\": \"string\",\r\n                    \"subSubCategory\": \"string\",\r\n                    \"supplier\": \"Amazon\",\r\n                    \"tax\": 10,\r\n                    \"thumbImageUrl\": \"string\",\r\n                    \"totalDollarCost\": \"10\",\r\n                    \"totalPoints\": \"1\",\r\n                    \"trackingNumber\": \"123\",\r\n                    \"trackingURL\": \"string\",\r\n                    \"usmSlug\": \"1\"\r\n                }\r\n            ]\r\n        },\r\n        \"shipToAlternateAddress\": \"Y\"\r\n    },\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"PH\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/placeRewardsOrderService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"placeRewardsOrderService"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rewards Order",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{rewards_token}}",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"requestHeader\": {\r\n        \"applId\": \"GWS\",\r\n        \"conversationId\": \"{{conversationId}}\",\r\n        \"countryCode\": \"PH\",\r\n        \"languageCode\": \"ENG\",\r\n        \"partnerId\": null,\r\n        \"partnerServerId\": null,\r\n        \"partnerSessionId\": null,\r\n        \"partnerSystemId\": null,\r\n        \"requestDate\": \"{{requestDate}}\",\r\n        \"requestId\": \"{{requestId}}\",\r\n        \"sourceCode\": null\r\n    },\r\n    \"updateRewardsOrderRequest\": {\r\n        \"actionCode\": \"RETB4SHIP\",\r\n        \"actualShipDate\": \"2022-12-29T14:58:00\",\r\n        \"address1\": \"\",\r\n        \"address2\": \"\",\r\n        \"address3\": \"\",\r\n        \"address4\": \"\",\r\n        \"address5\": \"\",\r\n        \"address6\": \"\",\r\n        \"carrier\": \"bluedart\",\r\n        \"cartId\": 5957984,\r\n        \"cityname\": \"\",\r\n        \"comments\": \"\",\r\n        \"confirmationNumber\": 1234,\r\n        \"countryCode\": \"PH\",\r\n        \"estimatedReleaseDate\": \"2022-12-30\",\r\n        \"estimatedShipDate\": \"2022-12-29T14:58:00\",\r\n        \"in_evoucher_url\": \"\",\r\n        \"instoreExchangeDttm\": \"2022-12-29\",\r\n        \"instorePickupDttm\": \"2022-12-29T14:58:00\",\r\n        \"instoreReturnDttm\": \"2022-12-30\",\r\n        \"inventoryId\": 123,\r\n        \"isOrderReadyInd\": \"N\",\r\n        \"memberId\": \"9608061347082140\",\r\n        \"orderId\": \"2007842174\",\r\n        \"orderLine\": 1,\r\n        \"partialReturnCashValue\": \"10.5\",\r\n        \"partialReturnPts\": 0,\r\n        \"postalCode\": \"\",\r\n        \"postalCodeExt\": \"\",\r\n        \"remainingPoints\": \"1000\",\r\n        \"shipLabelUrl\": \"www.bluedart.com\",\r\n        \"shippingStatus\": \"RETUNDELIV\",\r\n        \"stateCode\": \"\",\r\n        \"trackingNumber\": 123\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{services_url}}/restservices-rewards/services/updateRewardsOrderService",
+							"host": [
+								"{{services_url}}"
+							],
+							"path": [
+								"restservices-rewards",
+								"services",
+								"updateRewardsOrderService"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "{{rewards_token}}",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Eclipse Token Generation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json()\r",
+							"pm.environment.set(\"eclipse_token\", jsonData['access_token'])\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"grant_type\":\"client_credentials\",\r\n\"client_id\": \"5ni5ivmh98vim02397pe09qgun\",\r\n\"client_secret\": \"hkunf1lv0gvqbdpl96dejlbe73and7ntj430ie71n09db7iiuhu\",\r\n\"scope\": \"eclipse/basic\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{token_generation_url}}/restservices-eclipse/oauth2/token",
+					"host": [
+						"{{token_generation_url}}"
+					],
+					"path": [
+						"restservices-eclipse",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rewards Token Generation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let jsonData = pm.response.json()\r",
+							"pm.environment.set(\"rewards_token\", jsonData['access_token'])"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"grant_type\":\"client_credentials\",\r\n\"client_id\": \"25f4fi9d6egpdcscio3pocod9n\",\r\n\"client_secret\": \"1jitpq6icqhodf84ogm4447u5ff3p6mfrrpkimulrdme0ffq5oeb\",\r\n\"scope\": \"rewards/basic\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{token_generation_url}}/restservices-rewards/oauth2/token",
+					"host": [
+						"{{token_generation_url}}"
+					],
+					"path": [
+						"restservices-rewards",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.variables.set(\"requestId\", \"{{$guid}}\")",
+					"pm.variables.set(\"conversationId\", \"{{$guid}}\")",
+					"let currentDate = new Date().toJSON().slice(0, 19)",
+					"pm.variables.set(\"requestDate\",currentDate)"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
